@@ -5,4 +5,4 @@ I got inspired by [Wego](https://github.com/schachmat/wego) so I started buildin
 
 Its a work in progress.
 
-![](https://github.com/jakate/weather/blob/master/screenshots/hel.png)
+![](https://github.com/jakate/weather/blob/master/screenshot/hel.png)
