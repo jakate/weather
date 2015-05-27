@@ -9,6 +9,7 @@
   "author": "Jaakko Tepponen",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.1.0",
     "commander": "^2.8.1",
     "request": "^2.55.0"
   }

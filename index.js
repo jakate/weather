@@ -1,5 +1,6 @@
 var program = require('commander');
 var request = require('request');
+var colors = require('colors');
 
 program
 .version('0.0.1')
@@ -20,35 +21,36 @@ console.log(' ');
 function addIcon(type, night){
   switch (type){
     case "rain" :
-      //console.log('☂');
-      console.log("     .-.        ");
-      console.log("    (   ).      ");
-      console.log("   (___(__)     ");
-      console.log("    ‘ ‘ ‘ ‘     ");
-      console.log("   ‘ ‘ ‘ ‘      ");
+      console.log("                ");
+      console.log("     .-.        ".white);
+      console.log("    (   ).      ".white);
+      console.log("   (___(__)     ".white);
+      console.log("    ‘ ‘ ‘ ‘     ".blue);
+      console.log("   ‘ ‘ ‘ ‘      ".blue);
     break;
     case "clouds" :
-      //console.log("☁");
-      console.log("     .--.       ");
-      console.log("  .-(    ).     ");
-      console.log(" (___.__)__)    ");
+      console.log("                ");
+      console.log("     .--.       ".white);
+      console.log("  .-(    ).     ".white);
+      console.log(" (___.__)__)    ".white);
+      console.log("                ");
+      console.log("                ");
     break;
     case "clear" :
       if(night) {
-        //console.log('☽');
-        console.log("     _.._     ");
-        console.log("   .' .-'`    ");
-        console.log("  /  /        ");
-        console.log("  |  |        ");
-        console.log("  \\  '._ _.; ");
-        console.log("   '. _ _.'   ");
+        console.log("     _.._     ".yellow);
+        console.log("   .' .-'`    ".yellow);
+        console.log("  /  /        ".yellow);
+        console.log("  |  |        ".yellow);
+        console.log("  \\  '._ _.; ".yellow);
+        console.log("   '. _ _.'   ".yellow);
       } else {
-        //console.log("☀");
-        console.log("    \\   /    ");
-        console.log("     .-.      ");
-        console.log("  ― (   ) ―   ");
-        console.log("     `-’      ");
-        console.log("    /   \\    ");
+        console.log("    \\   /    ".yellow);
+        console.log("     .-.      ".yellow);
+        console.log("  ― (   ) ―   ".yellow);
+        console.log("     `-’      ".yellow);
+        console.log("    /   \\    ".yellow);
+        console.log("              ");
       }
     break;
   }
